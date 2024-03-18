@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", "Inter", sans-serif;
+    color:  hsl(228, 12%, 48%);
+    background-color: hsl(30, 38%, 92%);
+    font-size: 0.8rem;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.card-container {
+    max-width: 25rem;
+    padding: 1.5rem;
+}
+
+@media only screen and (min-width: 30rem) {
+    .card {
+        box-sizing: border-box;
+        display: flex;
+    }
+    .card-a, .card-b {
+        width: 50%;
+    }
+    #desktop-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 0.8rem 0 0 0.8rem;
+        height: 100%;
+    }
+    #mobile-img {
+        display: none;
+    }
+} 
+    
+@media only screen and (max-width: 30rem) {
+    .card-container {
+        margin: 0 1rem;
+    }
+    #mobile-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    #desktop-img {
+        display: none;
+    }
+}
+
+.card-b {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+}
+
+#p1 {
+    letter-spacing: 0.15rem;
+}
+
+h1 {
+    font-weight: bold;
+    color: hsl(212, 21%, 14%);
+    padding: 1rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#left-td {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#p3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%); 
+}
+
+#p3a {
+    padding-left: 0.5rem;
+}
+
+#p3:active {
+    background-color: hsl(158, 41%, 24%);
+}
